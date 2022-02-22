@@ -60,6 +60,19 @@ $font-opensans: "Open Sans", sans-serif;
   margin-top: 2em;
 }
 
+@media (min-width: 500px) {
+  .content {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 499px) {
+  .content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
 .content-column {
   display: flex;
   flex-direction: column;
@@ -85,6 +98,24 @@ $font-opensans: "Open Sans", sans-serif;
   width: 100%;
   padding: 0;
   margin-bottom: -6px;
+}
+
+@media (max-width: 500px) {
+  .curve-lg {
+    display: none;
+  }
+  .curve-sm {
+    display: block;
+  }
+}
+
+@media (min-width: 500px) {
+  .curve-lg {
+    display: block;
+  }
+  .curve-sm {
+    display: none;
+  }
 }
 
 .content-column h2 {
