@@ -1,26 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
-
-// Colors
-// Primary
-$color-very-dark-blue: hsl(243, 87%, 12%);
-$color-desaturated-blue: hsl(238, 22%, 44%);
-
-// Accent
-$color-bright-blue: hsl(224, 93%, 58%);
-$color-moderate-cyan: hsl(170, 45%, 43%);
-
-// Neutral
-$color-light-grayish-blue: hsl(240, 75%, 98%);
-$color-light-gray: hsl(0, 0%, 75%);
-
-// Typography
-// Headings, Call-to-actions, Header Navigation
-// Weights: 400, 700
-$font-raleway: "Raleway", sans-serif;
-// Body
-// Weights: 400
-$font-opensans: "Open Sans", sans-serif;
-
 * {
   margin: 0;
   padding: 0;
@@ -34,10 +12,8 @@ $font-opensans: "Open Sans", sans-serif;
 .topnav {
   display: flex;
   justify-content: space-between;
-
   padding-top: 3em;
-
-  font-family: $font-raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: large;
   height: 3rem;
@@ -50,7 +26,7 @@ $font-opensans: "Open Sans", sans-serif;
 }
 
 .topnav > div > div {
-  color: $color-very-dark-blue;
+  color: #070439;
   line-height: 3rem;
   vertical-align: middle;
 }
@@ -66,13 +42,13 @@ $font-opensans: "Open Sans", sans-serif;
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
-
   gap: 1rem;
 }
 
 .padding-top-2 {
   padding-top: 2rem;
 }
+
 .content-column img {
   width: 100%;
 }
@@ -88,21 +64,19 @@ $font-opensans: "Open Sans", sans-serif;
 }
 
 .content-column h2 {
-  font-family: $font-raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 2em;
   font-weight: 700;
   line-height: 1.5em;
 }
 
 .content-column p {
-  font-family: $font-opensans;
-
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
 .content-column form {
   display: flex;
-
   gap: 1rem;
   justify-content: start;
 }
@@ -119,18 +93,18 @@ $font-opensans: "Open Sans", sans-serif;
   padding-bottom: 0.25rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  background-color: $color-bright-blue;
+  background-color: #3065f8;
   border-style: none;
   border-radius: 2px;
-  box-shadow: 1px 1px 3px $color-light-gray;
-  font-family: $font-opensans;
+  box-shadow: 1px 1px 3px #bfbfbf;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  color: $color-light-grayish-blue;
+  color: #f6f6fe;
   font-size: small;
 }
 
 .content-second {
-  background-color: $color-light-grayish-blue;
+  background-color: #f6f6fe;
   margin-left: 0;
   margin-right: 0;
   padding-left: 3em;
@@ -149,7 +123,7 @@ $font-opensans: "Open Sans", sans-serif;
   width: 300px;
   margin-top: 2rem;
   padding: 2rem;
-  box-shadow: 0 0 10px hsl(0, 0%, 75%, 0.6);
+  box-shadow: 0 0 10px rgba(191, 191, 191, 0.6);
 }
 
 .card > img {
@@ -170,10 +144,10 @@ $font-opensans: "Open Sans", sans-serif;
 
 .fylolink {
   margin-top: 2rem;
-  color: $color-moderate-cyan;
+  color: #3c9f8f;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  border-bottom: solid 1px $color-moderate-cyan;
+  border-bottom: solid 1px #3c9f8f;
   width: fit-content;
   line-height: 1rem;
 }
@@ -185,7 +159,7 @@ $font-opensans: "Open Sans", sans-serif;
 }
 
 .calltoaction {
-  background-color: $color-desaturated-blue;
+  background-color: #585989;
   display: flex;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -200,13 +174,13 @@ $font-opensans: "Open Sans", sans-serif;
 
 .calltoaction h3 {
   font-weight: 700;
-  font-family: $font-raleway;
+  font-family: "Raleway", sans-serif;
   font-size: x-large;
   margin-bottom: 1rem;
 }
 
 .calltoaction p {
-  font-family: $font-opensans;
+  font-family: "Open Sans", sans-serif;
   padding-right: 2rem;
 }
 
@@ -215,13 +189,13 @@ $font-opensans: "Open Sans", sans-serif;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   width: 70%;
-  box-shadow: 1px 1px 5px hsl(0, 0%, 25%, 0.6);
+  box-shadow: 1px 1px 5px rgba(64, 64, 64, 0.6);
   border: none;
   border-radius: 3px;
 }
 
 .calltoaction > div > form > button {
-  background-color: $color-bright-blue;
+  background-color: #3065f8;
   color: white;
   font-weight: 700;
   margin-top: 1rem;
@@ -230,7 +204,7 @@ $font-opensans: "Open Sans", sans-serif;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border: none;
-  box-shadow: 1px 1px 5px hsl(0, 0%, 25%, 0.6);
+  box-shadow: 1px 1px 5px rgba(64, 64, 64, 0.6);
   border-radius: 3px;
 }
 
@@ -241,47 +215,42 @@ $font-opensans: "Open Sans", sans-serif;
   padding-right: 3rem;
   padding-bottom: 5rem;
   padding-top: 4rem;
-  background-color: $color-very-dark-blue;
+  background-color: #070439;
   color: white;
   font-weight: 400;
-  font-family: $font-raleway;
+  font-family: "Raleway", sans-serif;
   font-size: small;
-
-  &__logo {
-    filter: saturate(100%) brightness(0%) invert(100%) sepia(35%) saturate(0%)
-      hue-rotate(54deg) brightness(112%) contrast(100%);
-    margin-bottom: 1rem;
-  }
-  &__contactinfo {
-    display: flex;
-    gap: 1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  &__icons {
-    display: flex;
-    gap: 1rem;
-    margin-right: 3rem;
-  }
-
-  &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px;
-    border-radius: 100%;
-    padding: 3px;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+}
+.fylofooter__logo {
+  filter: saturate(100%) brightness(0%) invert(100%) sepia(35%) saturate(0%) hue-rotate(54deg) brightness(112%) contrast(100%);
+  margin-bottom: 1rem;
+}
+.fylofooter__contactinfo {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.fylofooter__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.fylofooter__icons {
+  display: flex;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+.fylofooter__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px;
+  border-radius: 100%;
+  padding: 3px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .fylofooter ul {
@@ -291,3 +260,5 @@ $font-opensans: "Open Sans", sans-serif;
 .fylofooter svg {
   fill: white;
 }
+
+/*# sourceMappingURL=style.css.map */
