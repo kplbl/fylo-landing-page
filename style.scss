@@ -129,6 +129,10 @@ $font-opensans: "Open Sans", sans-serif;
   font-size: small;
 }
 
+.content-column form > button:hover {
+  filter: brightness(120%);
+}
+
 .content-second {
   background-color: $color-light-grayish-blue;
   margin-left: 0;
@@ -176,6 +180,10 @@ $font-opensans: "Open Sans", sans-serif;
   border-bottom: solid 1px $color-moderate-cyan;
   width: fit-content;
   line-height: 1rem;
+}
+
+.fylolink:hover {
+  filter: brightness(120%);
 }
 
 .fylolink img {
@@ -234,6 +242,10 @@ $font-opensans: "Open Sans", sans-serif;
   border-radius: 3px;
 }
 
+.calltoaction > div > form > button:hover {
+  filter: brightness(120%);
+}
+
 .fylofooter {
   display: flex;
   justify-content: space-between;
@@ -281,6 +293,10 @@ $font-opensans: "Open Sans", sans-serif;
     padding: 3px;
     width: 1.5rem;
     height: 1.5rem;
+  }
+
+  &__icon:hover {
+    color: $color-bright-blue;
   }
 }
 
